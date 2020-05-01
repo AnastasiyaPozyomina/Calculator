@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="style.css">
   <title>Сalculator</title>
 </head>
@@ -13,39 +13,39 @@
 
   <div class="calc">
     <input type="text" class="calc-field">
-    
-    <table class="calc-buttons">
+
+    <table class="calc-buttons" onclick="clickHandler(event)">
       <tr>
-        <th> <button>lg</button></th>
-        <th><button>0</button></th>
-        <th> <button>,</button></th>
-        <th><button>=</button></th>
+        <th> <button data-value="lg">lg</button></th>
+        <th><button data-value="0">0</button></th>
+        <th> <button data-value=",">,</button></th>
+        <th><button data-value="=">=</button></th>
       </tr>
       <tr>
-        <th> <button>1</button></th>
-        <th><button>2</button></th>
-        <th> <button>3</button></th>
-        <th><button>+</button></th>
+        <th> <button data-value="1">1</button></th>
+        <th><button data-value="2">2</button></th>
+        <th> <button data-value="3">3</button></th>
+        <th><button data-value="+">+</button></th>
       </tr>
 
       <tr>
-        <th> <button>4</button></th>
-        <th><button>5</button></th>
-        <th> <button>6</button></th>
-        <th><button>-</button></th>
+        <th> <button data-value="4">4</button></th>
+        <th><button data-value="5">5</button></th>
+        <th> <button data-value="6">6</button></th>
+        <th><button data-value="-">-</button></th>
       </tr>
       <tr>
-        <th> <button>7</button></th>
-        <th><button>8</button></th>
-        <th> <button>9</button></th>
-        <th><button>*</button></th>
+        <th> <button data-value="7">7</button></th>
+        <th><button data-value="8">8</button></th>
+        <th> <button data-value="9">9</button></th>
+        <th><button data-value="*">*</button></th>
       </tr>
 
       <tr>
-        <th> <button>c</button></th>
-        <th><button>х</button></th>
-        <th> <button>%</button></th>
-        <th><button>/</button></th>
+        <th> <button data-value="C">C</button></th>
+        <th><button data-value="х">х</button></th>
+        <th> <button data-value="%">%</button></th>
+        <th><button data-value="÷">÷</button></th>
       </tr>
     </table>
   </div>
