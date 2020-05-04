@@ -35,4 +35,5 @@ button {
 .calc-field {
   width: 92%;
   height: 53px;
+  text-align: right;
 }
